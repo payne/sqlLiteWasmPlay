@@ -1,0 +1,856 @@
+{
+  "customers": [
+    {
+      "customer_id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@email.com",
+      "phone": "555-0101",
+      "address": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip_code": "10001",
+      "registration_date": "2023-01-15",
+      "is_active": 1
+    },
+    {
+      "customer_id": 2,
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@email.com",
+      "phone": "555-0102",
+      "address": "456 Oak Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip_code": "90210",
+      "registration_date": "2023-02-20",
+      "is_active": 1
+    },
+    {
+      "customer_id": 3,
+      "first_name": "Bob",
+      "last_name": "Johnson",
+      "email": "bob.johnson@email.com",
+      "phone": "555-0103",
+      "address": "789 Pine Rd",
+      "city": "Chicago",
+      "state": "IL",
+      "zip_code": "60601",
+      "registration_date": "2023-03-10",
+      "is_active": 1
+    },
+    {
+      "customer_id": 4,
+      "first_name": "Alice",
+      "last_name": "Williams",
+      "email": "alice.williams@email.com",
+      "phone": "555-0104",
+      "address": "321 Elm St",
+      "city": "Houston",
+      "state": "TX",
+      "zip_code": "77001",
+      "registration_date": "2023-04-05",
+      "is_active": 1
+    },
+    {
+      "customer_id": 5,
+      "first_name": "Charlie",
+      "last_name": "Brown",
+      "email": "charlie.brown@email.com",
+      "phone": "555-0105",
+      "address": "654 Maple Dr",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip_code": "85001",
+      "registration_date": "2023-05-12",
+      "is_active": 1
+    },
+    {
+      "customer_id": 6,
+      "first_name": "Diana",
+      "last_name": "Davis",
+      "email": "diana.davis@email.com",
+      "phone": "555-0106",
+      "address": "987 Cedar Ln",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zip_code": "19101",
+      "registration_date": "2023-06-18",
+      "is_active": 0
+    },
+    {
+      "customer_id": 7,
+      "first_name": "Eva",
+      "last_name": "Miller",
+      "email": "eva.miller@email.com",
+      "phone": "555-0107",
+      "address": "147 Birch Way",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip_code": "78201",
+      "registration_date": "2023-07-22",
+      "is_active": 1
+    },
+    {
+      "customer_id": 8,
+      "first_name": "Frank",
+      "last_name": "Wilson",
+      "email": "frank.wilson@email.com",
+      "phone": "555-0108",
+      "address": "258 Spruce St",
+      "city": "San Diego",
+      "state": "CA",
+      "zip_code": "92101",
+      "registration_date": "2023-08-30",
+      "is_active": 1
+    }
+  ],
+  "sqlite_sequence": [
+    {
+      "name": "customers",
+      "seq": 8
+    },
+    {
+      "name": "categories",
+      "seq": 6
+    },
+    {
+      "name": "products",
+      "seq": 12
+    },
+    {
+      "name": "orders",
+      "seq": 50
+    }
+  ],
+  "categories": [
+    {
+      "category_id": 1,
+      "category_name": "Electronics",
+      "description": "Electronic devices and gadgets",
+      "created_date": "2023-01-01",
+      "is_active": 1
+    },
+    {
+      "category_id": 2,
+      "category_name": "Clothing",
+      "description": "Apparel and fashion items",
+      "created_date": "2023-01-01",
+      "is_active": 1
+    },
+    {
+      "category_id": 3,
+      "category_name": "Books",
+      "description": "Books and educational materials",
+      "created_date": "2023-01-01",
+      "is_active": 1
+    },
+    {
+      "category_id": 4,
+      "category_name": "Home & Garden",
+      "description": "Home improvement and gardening supplies",
+      "created_date": "2023-01-01",
+      "is_active": 1
+    },
+    {
+      "category_id": 5,
+      "category_name": "Sports",
+      "description": "Sports equipment and accessories",
+      "created_date": "2023-01-01",
+      "is_active": 1
+    },
+    {
+      "category_id": 6,
+      "category_name": "Toys",
+      "description": "Toys and games for all ages",
+      "created_date": "2023-01-01",
+      "is_active": 0
+    }
+  ],
+  "products": [
+    {
+      "product_id": 1,
+      "product_name": "Smartphone X1",
+      "category_id": 1,
+      "price": 699.99,
+      "stock_quantity": 50,
+      "description": "Latest smartphone with advanced features",
+      "sku": "PHONE-001",
+      "created_date": "2023-01-10",
+      "is_active": 1
+    },
+    {
+      "product_id": 2,
+      "product_name": "Laptop Pro",
+      "category_id": 1,
+      "price": 1299.99,
+      "stock_quantity": 25,
+      "description": "High-performance laptop for professionals",
+      "sku": "LAPTOP-001",
+      "created_date": "2023-01-15",
+      "is_active": 1
+    },
+    {
+      "product_id": 3,
+      "product_name": "Wireless Headphones",
+      "category_id": 1,
+      "price": 199.99,
+      "stock_quantity": 100,
+      "description": "Premium wireless headphones with noise cancellation",
+      "sku": "AUDIO-001",
+      "created_date": "2023-01-20",
+      "is_active": 1
+    },
+    {
+      "product_id": 4,
+      "product_name": "Designer Jeans",
+      "category_id": 2,
+      "price": 89.99,
+      "stock_quantity": 75,
+      "description": "Comfortable and stylish denim jeans",
+      "sku": "CLOTH-001",
+      "created_date": "2023-02-01",
+      "is_active": 1
+    },
+    {
+      "product_id": 5,
+      "product_name": "Cotton T-Shirt",
+      "category_id": 2,
+      "price": 24.99,
+      "stock_quantity": 200,
+      "description": "Basic cotton t-shirt in various colors",
+      "sku": "CLOTH-002",
+      "created_date": "2023-02-05",
+      "is_active": 1
+    },
+    {
+      "product_id": 6,
+      "product_name": "Winter Jacket",
+      "category_id": 2,
+      "price": 149.99,
+      "stock_quantity": 40,
+      "description": "Warm winter jacket for cold weather",
+      "sku": "CLOTH-003",
+      "created_date": "2023-02-10",
+      "is_active": 1
+    },
+    {
+      "product_id": 7,
+      "product_name": "Python Programming Guide",
+      "category_id": 3,
+      "price": 39.99,
+      "stock_quantity": 60,
+      "description": "Comprehensive guide to Python programming",
+      "sku": "BOOK-001",
+      "created_date": "2023-03-01",
+      "is_active": 1
+    },
+    {
+      "product_id": 8,
+      "product_name": "Data Science Handbook",
+      "category_id": 3,
+      "price": 49.99,
+      "stock_quantity": 30,
+      "description": "Essential handbook for data science",
+      "sku": "BOOK-002",
+      "created_date": "2023-03-05",
+      "is_active": 1
+    },
+    {
+      "product_id": 9,
+      "product_name": "Garden Hose",
+      "category_id": 4,
+      "price": 29.99,
+      "stock_quantity": 80,
+      "description": "50-foot garden hose with spray nozzle",
+      "sku": "GARDEN-001",
+      "created_date": "2023-04-01",
+      "is_active": 1
+    },
+    {
+      "product_id": 10,
+      "product_name": "Power Drill",
+      "category_id": 4,
+      "price": 79.99,
+      "stock_quantity": 35,
+      "description": "Cordless power drill with battery",
+      "sku": "TOOL-001",
+      "created_date": "2023-04-05",
+      "is_active": 1
+    },
+    {
+      "product_id": 11,
+      "product_name": "Tennis Racket",
+      "category_id": 5,
+      "price": 129.99,
+      "stock_quantity": 20,
+      "description": "Professional tennis racket",
+      "sku": "SPORT-001",
+      "created_date": "2023-05-01",
+      "is_active": 1
+    },
+    {
+      "product_id": 12,
+      "product_name": "Basketball",
+      "category_id": 5,
+      "price": 34.99,
+      "stock_quantity": 45,
+      "description": "Official size basketball",
+      "sku": "SPORT-002",
+      "created_date": "2023-05-05",
+      "is_active": 1
+    }
+  ],
+  "orders": [
+    {
+      "order_id": 1,
+      "customer_id": 6,
+      "product_id": 11,
+      "quantity": 4,
+      "unit_price": 129.99,
+      "total_amount": 519.96,
+      "order_date": "2025-05-12 19:15:08",
+      "status": "delivered",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 2,
+      "customer_id": 1,
+      "product_id": 10,
+      "quantity": 3,
+      "unit_price": 79.99,
+      "total_amount": 239.96999999999997,
+      "order_date": "2025-06-24 19:15:08",
+      "status": "cancelled",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 3,
+      "customer_id": 4,
+      "product_id": 9,
+      "quantity": 2,
+      "unit_price": 29.99,
+      "total_amount": 59.98,
+      "order_date": "2025-02-10 19:15:08",
+      "status": "delivered",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 4,
+      "customer_id": 3,
+      "product_id": 2,
+      "quantity": 1,
+      "unit_price": 1299.99,
+      "total_amount": 1299.99,
+      "order_date": "2025-04-26 19:15:08",
+      "status": "shipped",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 5,
+      "customer_id": 8,
+      "product_id": 6,
+      "quantity": 3,
+      "unit_price": 149.99,
+      "total_amount": 449.97,
+      "order_date": "2025-04-29 19:15:08",
+      "status": "pending",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 6,
+      "customer_id": 7,
+      "product_id": 12,
+      "quantity": 4,
+      "unit_price": 34.99,
+      "total_amount": 139.96,
+      "order_date": "2025-04-04 19:15:08",
+      "status": "pending",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 7,
+      "customer_id": 2,
+      "product_id": 8,
+      "quantity": 1,
+      "unit_price": 49.99,
+      "total_amount": 49.99,
+      "order_date": "2025-03-04 19:15:08",
+      "status": "pending",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 8,
+      "customer_id": 5,
+      "product_id": 11,
+      "quantity": 1,
+      "unit_price": 129.99,
+      "total_amount": 129.99,
+      "order_date": "2025-07-27 19:15:08",
+      "status": "pending",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 9,
+      "customer_id": 1,
+      "product_id": 12,
+      "quantity": 4,
+      "unit_price": 34.99,
+      "total_amount": 139.96,
+      "order_date": "2025-06-26 19:15:08",
+      "status": "delivered",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 10,
+      "customer_id": 5,
+      "product_id": 3,
+      "quantity": 1,
+      "unit_price": 199.99,
+      "total_amount": 199.99,
+      "order_date": "2025-04-14 19:15:08",
+      "status": "processing",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 11,
+      "customer_id": 3,
+      "product_id": 1,
+      "quantity": 3,
+      "unit_price": 699.99,
+      "total_amount": 2099.9700000000003,
+      "order_date": "2025-07-10 19:15:08",
+      "status": "cancelled",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 12,
+      "customer_id": 8,
+      "product_id": 4,
+      "quantity": 4,
+      "unit_price": 89.99,
+      "total_amount": 359.96,
+      "order_date": "2025-07-20 19:15:08",
+      "status": "pending",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 13,
+      "customer_id": 4,
+      "product_id": 10,
+      "quantity": 3,
+      "unit_price": 79.99,
+      "total_amount": 239.96999999999997,
+      "order_date": "2025-07-19 19:15:08",
+      "status": "shipped",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 14,
+      "customer_id": 1,
+      "product_id": 6,
+      "quantity": 3,
+      "unit_price": 149.99,
+      "total_amount": 449.97,
+      "order_date": "2025-02-20 19:15:08",
+      "status": "delivered",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 15,
+      "customer_id": 2,
+      "product_id": 10,
+      "quantity": 4,
+      "unit_price": 79.99,
+      "total_amount": 319.96,
+      "order_date": "2025-06-24 19:15:08",
+      "status": "pending",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 16,
+      "customer_id": 6,
+      "product_id": 1,
+      "quantity": 1,
+      "unit_price": 699.99,
+      "total_amount": 699.99,
+      "order_date": "2025-07-01 19:15:08",
+      "status": "delivered",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 17,
+      "customer_id": 4,
+      "product_id": 4,
+      "quantity": 3,
+      "unit_price": 89.99,
+      "total_amount": 269.96999999999997,
+      "order_date": "2025-05-19 19:15:08",
+      "status": "pending",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 18,
+      "customer_id": 5,
+      "product_id": 2,
+      "quantity": 3,
+      "unit_price": 1299.99,
+      "total_amount": 3899.9700000000003,
+      "order_date": "2025-05-24 19:15:08",
+      "status": "pending",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 19,
+      "customer_id": 3,
+      "product_id": 2,
+      "quantity": 2,
+      "unit_price": 1299.99,
+      "total_amount": 2599.98,
+      "order_date": "2025-05-01 19:15:08",
+      "status": "processing",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 20,
+      "customer_id": 5,
+      "product_id": 3,
+      "quantity": 2,
+      "unit_price": 199.99,
+      "total_amount": 399.98,
+      "order_date": "2025-02-14 19:15:08",
+      "status": "processing",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 21,
+      "customer_id": 5,
+      "product_id": 2,
+      "quantity": 5,
+      "unit_price": 1299.99,
+      "total_amount": 6499.95,
+      "order_date": "2025-05-27 19:15:08",
+      "status": "delivered",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 22,
+      "customer_id": 4,
+      "product_id": 6,
+      "quantity": 3,
+      "unit_price": 149.99,
+      "total_amount": 449.97,
+      "order_date": "2025-05-07 19:15:08",
+      "status": "processing",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 23,
+      "customer_id": 2,
+      "product_id": 1,
+      "quantity": 4,
+      "unit_price": 699.99,
+      "total_amount": 2799.96,
+      "order_date": "2025-03-05 19:15:08",
+      "status": "pending",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 24,
+      "customer_id": 4,
+      "product_id": 9,
+      "quantity": 4,
+      "unit_price": 29.99,
+      "total_amount": 119.96,
+      "order_date": "2025-02-05 19:15:08",
+      "status": "delivered",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 25,
+      "customer_id": 5,
+      "product_id": 10,
+      "quantity": 4,
+      "unit_price": 79.99,
+      "total_amount": 319.96,
+      "order_date": "2025-06-24 19:15:08",
+      "status": "delivered",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 26,
+      "customer_id": 6,
+      "product_id": 7,
+      "quantity": 3,
+      "unit_price": 39.99,
+      "total_amount": 119.97,
+      "order_date": "2025-04-09 19:15:08",
+      "status": "shipped",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 27,
+      "customer_id": 1,
+      "product_id": 3,
+      "quantity": 1,
+      "unit_price": 199.99,
+      "total_amount": 199.99,
+      "order_date": "2025-02-08 19:15:08",
+      "status": "processing",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 28,
+      "customer_id": 4,
+      "product_id": 8,
+      "quantity": 2,
+      "unit_price": 49.99,
+      "total_amount": 99.98,
+      "order_date": "2025-06-06 19:15:08",
+      "status": "pending",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 29,
+      "customer_id": 7,
+      "product_id": 3,
+      "quantity": 3,
+      "unit_price": 199.99,
+      "total_amount": 599.97,
+      "order_date": "2025-02-21 19:15:08",
+      "status": "processing",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 30,
+      "customer_id": 1,
+      "product_id": 10,
+      "quantity": 3,
+      "unit_price": 79.99,
+      "total_amount": 239.96999999999997,
+      "order_date": "2025-02-08 19:15:08",
+      "status": "pending",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 31,
+      "customer_id": 6,
+      "product_id": 5,
+      "quantity": 2,
+      "unit_price": 24.99,
+      "total_amount": 49.98,
+      "order_date": "2025-03-24 19:15:08",
+      "status": "delivered",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 32,
+      "customer_id": 8,
+      "product_id": 8,
+      "quantity": 3,
+      "unit_price": 49.99,
+      "total_amount": 149.97,
+      "order_date": "2025-03-31 19:15:08",
+      "status": "cancelled",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 33,
+      "customer_id": 5,
+      "product_id": 3,
+      "quantity": 2,
+      "unit_price": 199.99,
+      "total_amount": 399.98,
+      "order_date": "2025-06-03 19:15:08",
+      "status": "processing",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 34,
+      "customer_id": 4,
+      "product_id": 2,
+      "quantity": 2,
+      "unit_price": 1299.99,
+      "total_amount": 2599.98,
+      "order_date": "2025-02-11 19:15:08",
+      "status": "shipped",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 35,
+      "customer_id": 2,
+      "product_id": 8,
+      "quantity": 5,
+      "unit_price": 49.99,
+      "total_amount": 249.95000000000002,
+      "order_date": "2025-04-10 19:15:08",
+      "status": "delivered",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 36,
+      "customer_id": 5,
+      "product_id": 4,
+      "quantity": 2,
+      "unit_price": 89.99,
+      "total_amount": 179.98,
+      "order_date": "2025-06-02 19:15:08",
+      "status": "shipped",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 37,
+      "customer_id": 3,
+      "product_id": 8,
+      "quantity": 2,
+      "unit_price": 49.99,
+      "total_amount": 99.98,
+      "order_date": "2025-03-03 19:15:08",
+      "status": "cancelled",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 38,
+      "customer_id": 3,
+      "product_id": 4,
+      "quantity": 1,
+      "unit_price": 89.99,
+      "total_amount": 89.99,
+      "order_date": "2025-07-06 19:15:08",
+      "status": "processing",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 39,
+      "customer_id": 2,
+      "product_id": 2,
+      "quantity": 1,
+      "unit_price": 1299.99,
+      "total_amount": 1299.99,
+      "order_date": "2025-05-03 19:15:08",
+      "status": "shipped",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 40,
+      "customer_id": 7,
+      "product_id": 12,
+      "quantity": 2,
+      "unit_price": 34.99,
+      "total_amount": 69.98,
+      "order_date": "2025-03-28 19:15:08",
+      "status": "processing",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 41,
+      "customer_id": 4,
+      "product_id": 8,
+      "quantity": 4,
+      "unit_price": 49.99,
+      "total_amount": 199.96,
+      "order_date": "2025-03-29 19:15:08",
+      "status": "processing",
+      "shipping_address": "456 Oak Ave, Los Angeles, CA 90210"
+    },
+    {
+      "order_id": 42,
+      "customer_id": 2,
+      "product_id": 3,
+      "quantity": 4,
+      "unit_price": 199.99,
+      "total_amount": 799.96,
+      "order_date": "2025-03-14 19:15:08",
+      "status": "shipped",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 43,
+      "customer_id": 3,
+      "product_id": 3,
+      "quantity": 2,
+      "unit_price": 199.99,
+      "total_amount": 399.98,
+      "order_date": "2025-06-21 19:15:08",
+      "status": "shipped",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 44,
+      "customer_id": 5,
+      "product_id": 5,
+      "quantity": 3,
+      "unit_price": 24.99,
+      "total_amount": 74.97,
+      "order_date": "2025-07-01 19:15:08",
+      "status": "cancelled",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 45,
+      "customer_id": 8,
+      "product_id": 7,
+      "quantity": 3,
+      "unit_price": 39.99,
+      "total_amount": 119.97,
+      "order_date": "2025-03-13 19:15:08",
+      "status": "cancelled",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 46,
+      "customer_id": 7,
+      "product_id": 2,
+      "quantity": 3,
+      "unit_price": 1299.99,
+      "total_amount": 3899.9700000000003,
+      "order_date": "2025-02-05 19:15:08",
+      "status": "delivered",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 47,
+      "customer_id": 5,
+      "product_id": 8,
+      "quantity": 5,
+      "unit_price": 49.99,
+      "total_amount": 249.95000000000002,
+      "order_date": "2025-03-15 19:15:08",
+      "status": "shipped",
+      "shipping_address": "123 Main St, New York, NY 10001"
+    },
+    {
+      "order_id": 48,
+      "customer_id": 3,
+      "product_id": 2,
+      "quantity": 4,
+      "unit_price": 1299.99,
+      "total_amount": 5199.96,
+      "order_date": "2025-04-16 19:15:08",
+      "status": "pending",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    },
+    {
+      "order_id": 49,
+      "customer_id": 5,
+      "product_id": 11,
+      "quantity": 3,
+      "unit_price": 129.99,
+      "total_amount": 389.97,
+      "order_date": "2025-04-19 19:15:08",
+      "status": "shipped",
+      "shipping_address": "321 Elm St, Houston, TX 77001"
+    },
+    {
+      "order_id": 50,
+      "customer_id": 5,
+      "product_id": 9,
+      "quantity": 3,
+      "unit_price": 29.99,
+      "total_amount": 89.97,
+      "order_date": "2025-02-21 19:15:08",
+      "status": "shipped",
+      "shipping_address": "789 Pine Rd, Chicago, IL 60601"
+    }
+  ]
+}
